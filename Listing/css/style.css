@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.main_header img{
+    width: 130px;
+    height: 130px;
+}
+.login-btn,.product_btn,.logout-btn{
+    border: none;
+    outline: none;
+    padding: 20px 10px;
+    background-color: aqua;
+    cursor: pointer;
+}
+.product_btn{
+    margin-bottom: 20px;
+}
+.pop-up{
+    display: none;
+}
+.clkbtn {
+	height: 60px;
+	width: 150px;
+	border-radius: 50px;
+	background-image: linear-gradient(to right,
+			rgb(255, 195, 110),
+			rgb(255, 146, 91));
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+}
+
+.login-box,.product-box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding:40px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.product-box{
+    gap: 30px;
+    flex: 1;
+}
+.close-btn,.close-product-btn{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+}
+.add-product-btn{
+    position: absolute;
+    top: 10px;
+    right:60px;
+  
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+}
+.login-box input{
+    margin-bottom: 20px;
+}
+.app{
+    position: relative;
+}
+.ele {
+	height: 60px;
+	width: 400px;
+	outline: none;
+	border: none;
+	color: rgb(77, 77, 77);
+	background-color: rgb(240, 240, 240);
+	border-radius: 50px;
+	padding-left: 30px;
+	font-size: 18px;
+}
+.product_info{
+    text-align: end;
+}
+.pop-up,.product-pop-up {
+     /* Hidden by default */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start with invisible popup */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for opacity and visibility */
+   
+}
+.pop-up.show,.product-pop-up.show {
+    visibility: visible;
+    opacity: 1; /* Fully visible when shown */
+    display: flex;
+}
+table {
+    max-width: 1100px;
+    margin: 0px auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+.product_details{
+    display: none;
+}
+.product-pop-up{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    max-width: 1100px;
+    margin: 0px auto;
+    width: 100%;
+}
